@@ -1,5 +1,11 @@
+:root {
+    --main-color: steelblue;
+    --main-borders: 2px dashed rgba(0, 0, 0, 0.5);
+    --margin: 1rem;
+}
+
 nav {
-    background-color: steelblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 
@@ -10,7 +16,7 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: var(--main-color);
 }
 
 main {
@@ -20,19 +26,21 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: var(--main-borders);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    margin: var(--margin);
 }
 
 p {
     padding: 0;
+    margin: var(--margin);
 }
 
 aside {
     width: 30rem;
-    margin: 1rem;
-    border: 2px dashed rgba(0, 0, 0, 0.5);
+    margin: var(--margin);
+    border: var(--main-borders);
     padding: 1rem;
     background-color: rgb(204, 255, 255);
     color: #222;
