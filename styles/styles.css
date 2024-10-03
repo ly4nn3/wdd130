@@ -53,6 +53,7 @@ ul {
 }
 
 aside {
+    position: relative;
     width: 30rem;
     border: var(--main-borders);
     padding: 1rem;
