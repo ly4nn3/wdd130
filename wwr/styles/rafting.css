@@ -40,7 +40,7 @@ nav {
 h2 {
     margin: var(--default-margin);
     padding: var(--default-padding);
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     border-bottom: solid;
     text-align: center;
 }
