@@ -16,6 +16,21 @@
 
 body {
     font-family: Lato, Helvetica, sans-serif;
+    background-color: var(--accent1-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    padding: var(--default-padding);
+    background-color: var(--accent1-color);
+}
+
+header img {
+    justify-self: center;
+    align-self: center;
 }
 
 nav {
@@ -24,7 +39,10 @@ nav {
 
 h2 {
     margin: var(--default-margin);
+    padding: var(--default-padding);
     color: var(--accent2-color);
+    border-bottom: solid;
+    text-align: center;
 }
 
 p {
@@ -32,9 +50,23 @@ p {
     padding: var(--default-padding);
 }
 
+section {
+    border: solid var(--accent2-color);
+    border-radius: 10px;
+    margin: var(--default-margin);
+    background-color: rgba(255, 255, 255, 0.999);
+}
+
 footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+footer p {
+    grid-column: 1;
     text-align: center;
 }
+
 /* Class selectors */
 .hero {
     position: relative;
@@ -44,7 +76,8 @@ footer {
     display: block;
     width: 100%;
     height: auto;
-    top: 50%
+    top: 50%;
+    padding-bottom: 1em;
 }
 
 .hero h1 {
@@ -78,8 +111,68 @@ footer {
     padding: var(--default-padding);
 }
 
+.top-nav {
+    display: flex;
+    list-style: none;
+    flex: 1 1 100%;
+    justify-content: space-around;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.top-nav a:hover {
+    color: var(--accent2-color);
+}
+
+.history {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--default-margin);
+}
+
+.history img {
+    flex: 1 1 auto;
+    width: 200px;
+    height: auto;
+    align-self: center;
+    ;
+}
+
+.history p {
+    flex: 3;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    margin: var(--default-margin);
+    padding: var(--default-padding);
+}
+
+.adventure figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.adventure img {
+    max-width: 90%;
+}
+
 .social-links {
-    display: block;
+    grid-column: 2;
+    display: flex;
+    align-self: center;
+    gap: 1em;
+    margin-right: 2rem;
 }
 
 .social-links a {
@@ -87,5 +180,14 @@ footer {
 }
 
 .social-links img {
-    width: 32px;
+    width: 2em;
+}
+
+/* ID selectors */
+#one {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#two {
+    grid-area: 2 / 3 / 3 / 4;
 }
