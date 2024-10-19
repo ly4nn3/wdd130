@@ -103,6 +103,6 @@ footer {
 
 .grid {
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
 }
