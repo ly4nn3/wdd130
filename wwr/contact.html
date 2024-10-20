@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the contact information page for the Dry Oar Rafting Co. site.">
+    <meta name="author" content="Julyanne Lee Rue-Yuin">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lato:ital,wght@0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+    
+    <title>Contact Us - Dry Oar Rafting Co.</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/dryoarlogo.png" alt="Dry Oar Rafting Co. logo" width="80">
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-title">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Address</h2>
+                <p>Dry Oar Rafting Co., Selangor River, Selangor, Malaysia</p>
+                <h2>Phone</h2>
+                <p>555-555 5555</p>
+                <h2>Email</h2>
+                <p><a href="mailto:">dryoar@rafting.co</a></p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3982.215191396866!2d101.67403616031567!3d3.5377426668953973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swhite%20water%20rafting!5e0!3m2!1sen!2smy!4v1729369351575!5m2!1sen!2smy" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <section class="employees">
+            <h2>Employees</h2>
+            <div class="employee-list">
+                <figure>
+                    <img src="images/employee1.jpg" alt="employee1">
+                    <figcaption>Founder</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="employee2">
+                    <figcaption>Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="employee3">
+                    <figcaption>Rafting Coach</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <form>
+            <h2>Send Us a Message</h2>
+            <fieldset>
+                <legend>Details</legend>
+                <div class="details">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="details">
+                    <label for="useremail">Email:</label>
+                    <input type="text" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Purpose</legend>
+                <div class="radio-button">
+                    <input type="radio" id="general" name="purpose" value="Inquiry">
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" id="reservation" name="purpose" value="Question">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" id="suggestion" name="purpose" value="Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Newsletter</legend>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dry Oar Rafting Co. | Julyanne Lee Rue-Yuin | <a href="https://app.moqups.com/NrkvbEiQMK2OWeAGDGsPoQYFRFXxr8V6/view/page/ad64222d5">Wireframe Link</a></p>
+        <nav class="social-links">
+            <a href="https://facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://tiktok.com/" target="_blank">
+                <img src="images/tiktok.svg" alt="TikTok">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
