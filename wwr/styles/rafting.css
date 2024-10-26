@@ -345,6 +345,9 @@ footer a {
     background-color: var(--accent1-color);
 }
 
+.newsletter label {
+    text-align: left;
+}
 .newsletter img {
     width: 200px;
     height: auto;
